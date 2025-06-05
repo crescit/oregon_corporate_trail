@@ -14,7 +14,6 @@ Built with:
 - Vanilla JS + NES.css
 - `localStorage` state (persists until your real-life resignation)
 - Mobile-friendly and dark-mode by default
-- Touch of `dvh`, `rem`, and sadness
 
 ---
 
