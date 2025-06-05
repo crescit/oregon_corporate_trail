@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --main-bg: #17181a;
+  --panel-bg: #1e1f22;
+  --border:   #cacaca;
+  --accent:   #00d9ff;
+  --danger:   #ff4554;
+  --text:     #ffffff;
+  --heading:  #ff7f6e;
+
+  --spacing: 1rem;
+  --radius: 0.25rem;
+  --font-small: 0.7rem;
+  --font-base: 0.8rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* base rem unit */
+}
+
+body {
+  margin: 0;
+  background: var(--main-bg);
+  color: var(--text);
+  font-family: 'Press Start 2P', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--spacing);
+  min-height: 100dvh;
+}
+
+.game-box {
+  width: 100%;
+  max-width: 40rem;
+  background: var(--panel-bg);
+  border: 0.25rem solid var(--border);
+  padding: 1.25rem;
+  box-shadow: 0 0 1.5rem rgba(0, 228, 255, 0.2);
+  border-radius: var(--radius);
+}
+
+/* ===== Headings */
+h2 {
+  font-size: 1rem;
+  color: var(--heading);
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+/* ===== Dashboard panel */
+.nes-container {
+  background-color: var(--panel-bg) !important;
+  border-color: var(--accent) !important;
+  color: var(--text);
+  font-size: var(--font-base);
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+}
+
+/* ===== Game log */
+#log {
+  height: 10dvh;
+  min-height: 8rem;
+  max-height: 30dvh;
+  overflow-y: auto;
+  background: #000;
+  border: 0.25rem solid var(--accent);
+  padding: 0.75rem;
+  font-size: var(--font-small);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* ===== Buttons */
+button.nes-btn {
+  font-size: var(--font-small);
+  padding: 0.75rem 1rem;
+  margin: 0.3rem;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+  border-radius: var(--radius);
+  transition: transform 0.1s ease, filter 0.2s ease;
+}
+
+button.nes-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* ===== Button rows */
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* ===== Footer */
+footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.6rem;
+  opacity: 0.6;
+}
